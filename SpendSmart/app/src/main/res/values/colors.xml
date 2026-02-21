@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Material 3 Primary Palette -->
+    <color name="primary">#6750A4</color>
+    <color name="secondary">#625B71</color>
+
+    <!-- Status Colors for Visualization (Member 7) -->
+    <color name="status_green">#4CAF50</color>
+    <color name="status_yellow">#FFC107</color>
+    <color name="status_red">#F44336</color>
+
+    <!-- Lee  -->
+    <!-- Dashboard -->
+    <color name="md_theme_light_primary">#6750A4</color>
+
+    <!-- Item category -->
+    <color name="md_theme_light_onBackground">#000000</color>
+
+</resources>

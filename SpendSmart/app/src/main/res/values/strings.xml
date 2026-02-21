@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">SpendSmart</string>
+
+    <!-- Navigation Labels -->
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_add">Add Expense</string>
+    <string name="title_insights">Insights</string>
+
+    <!-- Form Labels -->
+    <string name="lbl_amount">Amount (KSh)</string>
+    <string name="lbl_category">Category</string>
+    <string name="lbl_date">Date</string>
+
+    <!-- Action Buttons -->
+    <string name="btn_save">Save Expense</string>
+    <string name="btn_reset">Reset Form</string>
+
+    <!-- Placeholders -->
+    <string name="hint_amount">0.00</string>
+    <string name="budget_remaining">Remaining Budget</string>
+
+    <!-- Lee's -->
+    <!-- Add Expense -->
+    <string name="title_add_expense">Add Expense</string>
+    <!-- Dashboard -->
+    <string name="remaining_balance">Remaining Balance: $0.00</string>
+    <string name="recent_transactions">Recent Transactions</string>
+
+    <!-- item_transaction -->
+    <string name="category_food">Food</string>
+    <string name="price">$25</string>
+    <string name="date">25 Jan</string>
+    <string name="percentage">45%</string>
+
+    <!-- Item category -->
+    <string name="category_name">Category Name</string>
+    <string name="category_percentage">0%</string>
+
+    <!-- Insights -->
+    <string name="no_transactions">No Transactions yet</string>
+
+
+
+
+
+
+</resources>
