@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:padding="12dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Category Name -->
+        <TextView
+            android:id="@+id/tvCategoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/category_name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/md_theme_light_onBackground"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Category Progress -->
+        <ProgressBar
+            android:id="@+id/progressCategory"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:progress="0"
+            android:progressTint="@color/md_theme_light_primary"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Optional: Percentage Text -->
+        <TextView
+            android:id="@+id/tvPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/category_percentage"
+            android:textSize="14sp"
+            android:textColor="@color/md_theme_light_onBackground"
+            android:layout_gravity="end"/>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
