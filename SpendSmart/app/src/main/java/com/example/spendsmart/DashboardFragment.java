@@ -1,5 +1,7 @@
 package com.example.spendsmart;
 
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,22 +24,29 @@ public class DashboardFragment extends Fragment {
         ProgressBar budgetProgressBar = view.findViewById(R.id.budgetProgress);
         TextView remainingBalanceText = view.findViewById(R.id.tvRemainingBalance);
 
-        // 3. Set up some dummy data for testing (Later, pull this from your database)
-        double currentSpent = 750.0; // Assume you spent $750
-        double budgetLimit = 1000.0; // Assume your budget is $1000
+        // 3. Set up dummy data (Later, pull this from your database)
+        double currentSpent = 950.0;
+        double budgetLimit = 1000.0; 
 
         // 4. Call your math utility
         int progressPercentage = BudgetMathUtils.calculateSpendingPercentage(currentSpent, budgetLimit);
         double remainingBalance = budgetLimit - currentSpent;
 
-        // 5. Apply the calculated percentage to the ProgressBar
+        // 5. Apply the calculated percentage and handle visual insights
         if (budgetProgressBar != null) {
             budgetProgressBar.setProgress(progressPercentage);
+
+            // Using an if statement to turn the bar Red if usage exceeds 90%
+            if (progressPercentage >= 90) {
+                budgetProgressBar.setProgressTintList(ColorStateList.valueOf(Color.RED));
+            } else {
+                // Default color (e.g., green or the theme's primary color)
+                budgetProgressBar.setProgressTintList(ColorStateList.valueOf(Color.GREEN)); 
+            }
         }
 
         if (remainingBalanceText != null) {
-            // Format the number to look like currency (e.g., $250.00)
-            remainingBalanceText.setText(String.format("Remaining: $%.2f", remainingBalance));
+            remainingBalanceText.setText(String.format("Remaining Balance: $%.2f", remainingBalance));
         }
 
         return view;
